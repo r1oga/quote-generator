@@ -1,0 +1,206 @@
+'use strict'
+
+const data = [
+  {
+    quotes: [
+      'Seek wealth, not money or status. Wealth is having assets that earn while you sleep. Money is how we transfer time and wealth. Status is your place in the social hierarchy.',
+      'You make your own luck if you stay at it long enough.',
+      'You have society in your phone, society in your pocket, society in your ears… It’s socializing you and programming everyone. The only solution is to turn it off.”',
+      'Competing without software is like competing without electricity.',
+      'To the experts, what looks like hard work from the outside, is play from the inside.',
+      "In any situation in life, you only have three options. You always have three options. You can change it, you can accept it, or you can leave it. What is not a good option is to sit around wishing you would change it but not changing it, wishing you would leave it but not leaving it, and not accepting it. It's that struggle, that aversion, that is responsible for most of our misery. The phrase that I probably use the most to myself in my head is just one word: accept.",
+      'Learn to sell. Learn to build. If you can do both, you will be unstoppable.',
+      'Play iterated games. All the returns in life, whether in wealth, relationships, or knowledge, come from compound interest.',
+      'Specific knowledge is often highly technical or creative. It cannot be outsourced or automated.',
+      'Desire is a contract that you make with yourself to be unhappy until you get what you want.',
+      "If you can't code, write books and blogs, record videos and podcasts.",
+      'The secret to public speaking is to speak as if you were alone.',
+      'People who live far below their means enjoy a freedom that people busy upgrading their lifestyles can’t fathom.',
+      'Reading is faster than listening. Doing is faster than watching.',
+      'Become the best in the world at what you do. Keep redefining what you do until this is true.',
+      "When you're finally wealthy, you'll realize that it wasn't what you were seeking in the first place.",
+      "It's almost always possible to be honest and positive.",
+      "When you're finally wealthy, you'll realize that it wasn't what you were seeking in the first place.",
+      'Blockchains will replace networks with markets.',
+      'A fit body, a calm mind, a house full of love. These things cannot be bought — they must be earned.',
+      'The real struggle isn’t proletariat vs bourgeois. It’s between high-status elites and wealthy elites. When their cooperation breaks, revolution.',
+      'Wealth creation is an evolutionarily recent positive-sum game. Status is an old zero-sum game. Those attacking wealth creation are often just seeking status.',
+      'Even today, what to study and how to study it are more important than where to study it and for how long. The best teachers are on the Internet. The best books are on the Internet. The best peers are on the Internet. The tools for learning are abundant. It’s the desire to learn that’s scarce.',
+      'This is such a short and precious life that it’s really important that you don’t spend it being unhappy.',
+      'The power to make and break habits and learning how to do that is really important.',
+      'Happiness is a choice and a skill and you can dedicate yourself to learning that skill and making that choice.',
+      'A rational person can find peace by cultivating indifference to things outside of their control.',
+      'The problem happens when we have multiple desires. When we have fuzzy desires. When we want to do ten different things and we’re not clear about which is the one we care about.',
+      'People spend too much time doing and not enough time thinking about what they should be doing.',
+      'The people who succeed are irrationally passionate about something.',
+      'I don’t plan. I’m not a planner. I prefer to live in the moment and be free and to flow and to be happy.',
+      'If the primary purpose of school was education, the Internet should obsolete it. But school is mainly about credentialing.',
+      'Be present above all else.',
+      'Pick three hobbies: One that makes you money, one that makes you fit, and one that keeps you creative.',
+      'The older the problem, the older the solution.',
+      'It’s the mark of a charlatan to try and explain simple things in complex ways and it’s the mark of a genius to explain complicated things in simple ways.',
+      'People who try to look smart by pointing out obvious exceptions actually signal the opposite.',
+      'Society has had multiple stores of value, as none is perfectly secure. Gold, oil, dollars, real estate, (some) bonds & equities. Crypto is the first that’s decentralized *and* digital.',
+      'Cynicism is easy. Mimicry is easy. Optimistic contrarians are the rarest breed.',
+      'Following your genuine intellectual curiosity is a better foundation for a career than following whatever is making money right now.',
+      'Objectively, the world is improving. To the elites, it’s falling apart as their long-lived institutions are flattened by the Internet.',
+      'A personal metric: how much of the day is spent doing things out of obligation rather than out of interest?',
+      'To be honest, speak without identity.',
+      'We feel guilt when we no longer want to associate with old friends and colleagues who haven’t changed. The price, and marker, of growth.',
+      'The most important trick to be happy is to realize that happiness is a choice that you make and a skill that you develop. You choose to be happy, and then you work at it. It’s just like building muscles.',
+      'So I have no time for short-term things: dinners with people I won’t see again, tedious ceremonies to please tedious people, traveling to places that I wouldn’t go to on vacation.',
+      'I don’t have time is just saying it’s not a priority.',
+      'Escape competition through authenticity.',
+      'Signaling virtue is a vice.',
+      'Reality is neutral. Our reactions reflect back and create our world. Judge, and feel separate and lonely. Anger, and lose peace of mind. Cling, and live in anxiety. Fantasize, and miss the present. Desire, and suffer until you have it. Heaven and hell are right here, right now.',
+      'Signaling virtue is a vice.',
+      'Knowledge is a skyscraper. You can take a shortcut with a fragile foundation of memorization, or build slowly upon a steel frame of understanding.',
+      'Politics is the exercise of power without merit.',
+      'Doctors won’t make you healthy. Nutritionists won’t make you slim. Teachers won’t make you smart. Gurus won’t make you calm. Mentors won’t make you rich. Trainers won’t make you fit. Ultimately, you have to take responsibility. Save yourself.',
+      'Impatience with actions. Patience with results.'
+    ],
+    author: 'Naval Ravikant',
+    url: 'https://nav.al/',
+    handle: '@naval'
+  },
+  {
+    quotes: [
+      'Peace of mind is the highest wealth.',
+      'The most valuable thing to understand is your own mind.',
+      'Optimise for the things that you want and be ruthless about cutting everything else.',
+      'If you are not happy with what you already have, how could you be happier with more?',
+      'Don’t get too high when you win or too low when you lose.',
+      'The good news about school is that it doesn’t reflect the real world. The bad news about school is that it doesn’t reflect the real world.',
+      'Start tomorrow today.',
+      'Being yourself is a valid goal.',
+      'Someone always has the capacity to ruin your day, but whether they do is up to you.',
+      'We don’t understand the value of something until we lose it.',
+      'Not everything your mind tell you is correct.',
+      "You don't need more information, you need to tell the difference between what is important and what isn't.",
+      'There really are no big, bad enemies who exist to make you suffer. The real game of life is internal.',
+      'You don’t need the best idea, you need the best execution.',
+      'It takes sweat to work, but only saliva to criticize.',
+      'Learning is just as entertaining as entertainment, but with long term benefits.',
+      'The person standing between you and your dream is yourself.',
+      'Launching something good now is better than launching something perfect later.',
+      'Deschool your mind, then begin to ask questions.',
+      'Knowledge is cheap, curiosity is priceless.',
+      'If you can fully accept yourself, others, and the world around you — only trying to change the truly changeable — you’ll be miles ahead of the people who wish life was different, fair, and in-line with their expectations.',
+      'For your own sake, get in the habit of understanding the things you wish weren’t true.',
+      'If you work like a maniac for three hours you will have surpassed most people who work off and on for eight.',
+      'Learning to be happy when you have nothing and are nothing is the most sane thing you can do.',
+      "If there is fear, it's not love, it's insecurity. If there is jealousy, it's not love, it's immaturity. If there is anger, it's not love, it's separation. If there is need, it's not love, it's dependence. If there is control, it's not love, it's habit.",
+      'A healthy person has three signs of well being: a fit body, an efficient mind, and a calm soul.',
+      'Fear wants to protect you, even from the good things in life.',
+      'When you stop doing the wrong things, the right thing does itself.',
+      'If you didn’t earn it, you’re probably not going to know how to keep it.',
+      'Don’t be a prisoner of your preferences. Interrogate your own opinions.',
+      "It's not by adding things that you will know peace. It's by ridding yourself of the illusory conditions that make it seem necessary in the first place. You don’t need security, you need to dissolve your insecurity. You don’t need self-esteem, you need to let go of doubt.",
+      'How you regard death is how you regard life.',
+      'Learn how to say no. First, by saying no to ego which wants it all.',
+      'Only a man who loves to prove himself wrong is the true seeker of knowledge.',
+      'Stop trying to cope with distractions and work to eliminate them.',
+      'Don’t be afraid of discomfort, be more afraid of comfort.',
+      'Vulnerability is not fragility. You can allow yourself to bend without breaking.',
+      'Above average people respect their focus, protect it, and radically ensure that they focus on what matters most.',
+      'If you can learn to be patient in a very impatient society, you win.',
+      'Thinking about doing is more exhausting than doing. Just do it.',
+      'You can measure someone based on the size of the things that bother them.',
+      'Kids learn what’s important to adults not by listening to what they say, but by noticing what gets their attention.',
+      "If you don't know why you are doing it, then why are you doing it?"
+    ],
+    author: 'Thibaut',
+    url: 'https://twitter.com/kpaxs',
+    handle: '@Kpaxs'
+  },
+  {
+    quotes: [
+      'Every word you pronounce when angry will go against you.',
+      'Don’t worry about what people think about you: they don’t.',
+      'The more you judge, the less you think.',
+      'No one can stop you if you’re consistently creative.',
+      'If you care about the truth, stop consuming any mainstream media. The truth is never popular.',
+      'If you constantly get offended by people who speak the truth, soon enough, you will only be surrounded by liars.',
+      'You are not wealthy when you have money, you are wealthy when you can spend your time on your own terms.',
+      'People who harass others always pretend to be the victims once the victims fight back.',
+      'You want a certain type of people around you, become that certain type of person first.',
+      'Don’t be angry when they treat you poorly, be sorry: that’s how they treat themselves.',
+      "Half of success is about cutting off people who don't grow and don't want you to either.",
+      "If you can't do anything only you can do, you will be assigned something many others can do.",
+      'A sign of intelligence: when you disagree, you start questioning your own beliefs.',
+      'Detach yourself from your identity and no one can hurt you with words.',
+      'The difference between happy people and worried people: detachment.',
+      'If investing was easy, everyone would be rich. If good habits were easy, everyone would be fit, smart, talented. If building a family was easy, everyone would be happy. If spending time alone was easy, everyone would be clear-minded.',
+      "It's usually not a gap of talent, but a gap of focus and consistency.",
+      "You are truly rich once most of your time isn't spent thinking about money.",
+      '“Lucky people” who caught opportunities had been getting ready for years.',
+      'Anxiety is lack of meaning. Anger is lack of intelligence. Blaming is lack of understanding. Depression is lack of growth.',
+      "Four principles for life. Don't destroy what you can't build. Don't criticize what you can't create. Don't envy what you won't work for. Don't judge what you don't understand",
+      'Every time you dislike someone, start asking what they have that you might want.',
+      'No one ever got successful by pleasing everybody.',
+      'Talent is mostly a lot of time training hard alone even when you don’t feel like it.',
+      'You worry less when you do more.',
+      'Successful people are just people really good at ignoring distractions.',
+      'Life is over, not when your body no longer responds, but when your mind stops being curious.',
+      'You can’t compete against people who have fun working.',
+      "Another sign of intelligence: you don't judge people you know nothing about.",
+      "If you enjoyed it, it wasn't a waste of time. Life isn't all about productivity.",
+      'Talent is just another word for discipline.',
+      'Efforts are always rewarded, you just don’t know when, and it’s never linear.',
+      'No one cares about what you think you can do until you actually do it.',
+      'To upgrade knowledge, read. To upgrade understanding, teach. To upgrade clarity, write. To upgrade health, fast. To upgrade growth, self-reflect. To upgrade open-mindedness, travel. To upgrade life, do all of the [previous].'
+    ],
+    author: 'Orange Book',
+    handle: '@orangebook_',
+    url: 'orangebook_'
+  },
+  {
+    quotes: [
+      'Our work is never over.',
+      'For me, money is not my definition of success. Inspiring people is a definition of success.',
+      "I refuse to accept other people's ideas of happiness for me. As if there's a 'one size fits all' standard for happiness.",
+      "We came into a broken world. And we're the cleanup crew.",
+      "We all self-conscious. I'm just the first to admit it.",
+      'I still think I am the greatest.',
+      'My greatest pain in life is that I will never be able to see myself perform life.',
+      'Keep your nose out the sky, keep your heart to god, and keep your face to the rising sun.',
+      'My greatest award is what I’m about to do.',
+      'I feel like I’m too busy writing history to read it.',
+      'Living well eliminates the need for revenge.',
+      'Why are people so afraid of creative ideas and so scared of truth? All I want to do is do good.',
+      'One of my biggest Achilles heels has been my ego. And if I, Kanye West, can remove my ego, I think there’s hope for everyone.',
+      'People always tell you ‘Be humble. Be humble.’ When was the last time someone told you to be amazing? Be great! Be awesome! Be awesome!',
+      'Most people are slowed down by the perception of themselves. If you’re taught you can’t do anything, you won’t do anything. I was taught I can do everything.',
+      'I’m pretty calculating. I take stuff that I know appeals to people’s bad sides and match it up with stuff that appeals to their good sides.',
+      'When you’re the absolute best, you get hated on the most.'
+    ],
+    author: 'Kanye West',
+    handle: '@kanyewest',
+    url: 'https://www.kanyewest.com/'
+  }
+]
+
+const getRandomInt = max => Math.floor(Math.random() * Math.floor(max))
+
+module.exports.getQuote = async event => {
+  const index = getRandomInt(data.length)
+  const quotes = data[index].quotes
+  const quote = quotes[getRandomInt(quotes.length)]
+  const { author, url, handle } = data[index]
+  return {
+    statusCode: 200,
+    body: JSON.stringify(
+      {
+        quote,
+        author,
+        url,
+        handle
+      },
+      null,
+      2
+    )
+  }
+
+  // Use this code if you don't use the http event with the LAMBDA-PROXY integration
+  // return { message: 'Go Serverless v1.0! Your function executed successfully!', event };
+}

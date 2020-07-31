@@ -1,15 +1,27 @@
-const API_URL = 'http://api.forismatic.com/api/1.0'
-const PROXY_URL = `https://${process.env.PROXY_URL}.herokuapp.com`
+const API_URL =
+  'https://wj5f1tey75.execute-api.eu-central-1.amazonaws.com/dev/quotes'
 
-;(async function getQuote() {
+const PROXY_URL = 'https://c0rsanywhere.herokuapp.com/'
+
+const quoteContainer = document.getElementById('quote-container')
+const quoteText = document.getElementById('quote')
+const quoteAuthor = document.getElementById('author')
+const twitterBtn = document.getElementById('twitter')
+const newQuoteBtn = document.getElementById('new-quote')
+
+async function getQuote() {
   try {
-    const response = await fetch(
-      `${API_URL}/?method=getQuote&lang=en&format=json`
-    )
-    const data = await response.json()
-    console.log(data)
+    const response = await fetch(`${PROXY_URL}${API_URL}`)
+    const { quote, author, url, handle } = await response.json()
+    quoteText.innerText = quote
+    console.log(author)
+    quoteAuthor.innerText = author
+    quoteAuthor.setAttribute('href', url)
   } catch (error) {
-    // getQuote()
     console.log(error)
   }
-})()
+}
+
+newQuoteBtn.addEventListener('click', () => getQuote())
+
+getQuote()

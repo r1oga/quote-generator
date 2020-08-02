@@ -112,3 +112,7 @@ functions:
 #     NewOutput:
 #       Description: "Description for the output"
 #       Value: "Some output value"
+cors:
+  - enabled: true
+  - origin: 'https://r1oga.github.io/quote-generator'
+  - methods: 'GET'

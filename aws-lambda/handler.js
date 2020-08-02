@@ -367,6 +367,10 @@ module.exports.getQuote = async event => {
   const { author, url, handle } = data[index]
   return {
     statusCode: 200,
+    headers: {
+      'Access-Control-Allow-Origin': 'https://r1oga.github.io'
+    },
+
     body: JSON.stringify(
       {
         quote,

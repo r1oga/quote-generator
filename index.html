@@ -16,25 +16,34 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="quote-container" id="quote-container">
-      <div class="quote-text">
-        <i class="fas fa-quote-left"></i>
-        <span id="quote"
-          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
-          consectetur tenetur labore omnis non officiis, eos cumque quis quas
-          ipsam voluptatum quidem, eaque sit corporis quasi ea! Dolor, similique
-          aspernatur!
-        </span>
-        <i class="fas fa-quote-right"></i>
-        <div class="quote-author">Buddha</div>
+    <main>
+      <div class="quote-container" id="quote-container">
+        <div class="quote-text">
+          <i class="fas fa-quote-left"></i>
+          <span id="quote"> </span>
+          <i class="fas fa-quote-right"></i>
+          <div>
+            <a id="author" class="quote-author"></a>
+          </div>
+        </div>
+        <div class="button-container">
+          <button class="twitter-button" id="twitter" title="Tweet this!">
+            <i class="fab fa-twitter"></i>
+          </button>
+          <button id="new-quote">New</button>
+        </div>
       </div>
-      <div class="button-container">
-        <button class="twitter-button" id="twitter" title="Tweet this!">
-          <i class="fab fa-twitter"></i>
-        </button>
-        <button id="new-quote">New quote</button>
+    </main>
+    <div class="loader" id="loader"></div>
+    <footer>
+      <div>
+        Made by
+        <a href="https://r1oga.now.sh/" target="_blank">@r1oga</a>
       </div>
-    </div>
+      <a target="_blank" href="https://github.com/r1oga/quote-generator">
+        <img src="github.png" alt="github logo" class="github" />
+      </a>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

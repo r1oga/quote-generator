@@ -294,7 +294,7 @@ const data = [
       'You have power over your mind - not outside events. Realize this, and you will find strength.',
       'Dwell on the beauty of life. Watch the stars, and see yourself running with them.',
       'The happiness of your life depends upon the quality of your thoughts.',
-      'E  verything we hear is an opinion, not a fact. Everything we see is a perspective, not the truth.',
+      'Everything we hear is an opinion, not a fact. Everything we see is a perspective, not the truth.',
       'Waste no more time arguing about what a good man should be. Be one.',
       'The soul becomes dyed with the colour of its thoughts.',
       'For it is in your power to retire into yourself whenever you choose.',

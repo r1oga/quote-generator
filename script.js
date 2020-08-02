@@ -38,6 +38,7 @@ async function getQuote() {
     quoteText.innerText = quote
     quoteAuthor.innerText = author
     quoteAuthor.setAttribute('href', url)
+    quoteAuthor.setAttribute('target', '_blank')
 
     removeLoadingSpinner()
   } catch (error) {
